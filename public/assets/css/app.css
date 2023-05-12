@@ -1,0 +1,340 @@
+@import "./bootstrap.css";
+@import "./font-awesome/css/font-awesome.css";
+
+
+*{
+    font-family: 'Popin' sans-serif !important;
+}
+
+body {
+    background: linear-gradient(#00074b, #3083ff) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    font-size: 15px;
+}
+
+.bg-cover {
+    background-color: black;
+    opacity: 0.5;
+}
+
+h4 {
+    text-shadow: 1px 1px 2px black !important;
+    color: black !important;
+}
+
+.form-control {
+    background-color: #f8f9fa;
+    font-size: 14px;
+}
+
+.form-control:focus,
+.form-control::after {
+    box-shadow: 0 0 4px 1px #0d6efd !important;
+    border: 1px solid #0d6efd !important;
+    transition: all ease-in-out .5s;
+    color: grey !important;
+}
+
+.alert-danger,
+.alert-success {
+    border: none !important;
+    font-size: small !important;
+    margin-top: -28px;
+    display: none;
+}
+
+.rechercher input,
+.rechercher input::after,
+.rechercher input::before {
+    outline: none;
+    border: none;
+    transition: all ease-in-out .5s;
+    border-radius: 6px 0 0 6px !important;
+    height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    pointer-events: none;
+    box-shadow: none !important;
+    width: 100%;
+}
+
+.rechercher input.active {
+    border-radius: 6px 0 0 6px !important;
+    pointer-events: fill;
+    box-shadow: none !important;
+    transition: all ease-in-out .5s;
+    border: solid 1px #0d6efd !important;
+    color: rgb(82, 82, 82) !important;
+}
+
+.rechercher button {
+    border: none;
+    background-color: none;
+    border-radius: 0 6px 6px 0 !important;
+    height: 35px;
+    width: 50px;
+    transition: all ease-in-out .5s;
+}
+
+.rechercher button.active {
+    box-shadow: none !important;
+    transition: all ease-in-out .5s;
+    border: solid 1px #0d6efd !important;
+    color: #0d6efd !important;
+    width: 50px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.rechercher button.active i::before {
+    content: "\f00d";
+    box-shadow: none !important;
+    transition: all ease-in-out .5s;
+    color: #0d6efd !important;
+    width: 50px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 0 6px 6px 0 !important;
+}
+
+.alert-success.activeSuccess {
+    transition: all ease-in-out .5s;
+    margin-top: -28px;
+    word-wrap: break-word;
+    display: block;
+}
+
+.alert-danger.activeDanger {
+    transition: all ease-in-out .5s;
+    margin-top: -28px;
+    word-wrap: break-word;
+    display: block;
+}
+
+form .form-group i {
+    position: absolute;
+    right: 24px;
+    transform: translateY(-28px);
+    color: grey;
+    cursor: pointer;
+    display: flex;
+}
+
+form .form-group i.active::before {
+    color: grey;
+    content: "\f070";
+}
+
+/* style for header */
+.content_right {
+    height: 100px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    transform: translateY(-35px);
+    opacity: 0.5;
+    width: 11px;
+    padding-left: 2px;
+    transition: all ease-in-out .5s;
+    position: absolute;
+    background-color: #f8f9fa;
+}
+
+.content_right:hover {
+    height: 100px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    transform: translateY(-35px);
+    opacity: 1;
+    width: 11px;
+    transition: all ease-in-out .5s;
+    position: absolute;
+    background-color: #f8f9fa;
+}
+
+.ellipsis1 {
+    margin-left: 1px;
+}
+
+/* Style for users */
+.contenu img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.openImg img {
+    width: 10px;
+    border: solid 1px grey;
+    margin-top: 25px;
+    height: 10px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.animate1
+
+.contenu_recherche,
+.discutionContent {
+    max-height: 400px !important;
+    overflow-y: auto !important;
+}
+.contenu_recherche::-webkit-scrollbar,
+.discutionContent::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+.profile {
+    cursor: pointer;
+    height: 50px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.text-success {
+    color: rgb(2, 194, 2) !important;
+}
+
+.dot_online {
+    color: rgb(2, 194, 2);
+    font-size: 10px;
+    border: solid 2px #f8f9fa;
+    border-radius: 100%;
+    transform: translateX(35px);
+    margin-top: 38px;
+}
+
+.dot_offline {
+    color: rgb(197, 197, 197);
+    font-size: 10px;
+    border: solid 2px #f8f9fa;
+    border-radius: 100%;
+    transform: translateX(35px);
+    margin-top: 38px;
+}
+
+.contenu span {
+    font-size: 14.4px;
+    font-family: 'Comic Sans MS';
+}
+
+.separation {
+    box-shadow: 0 1px 2px 1px grey;
+}
+
+/* message de discution */
+
+.send p,
+.receive p {
+    word-wrap: break-word;
+    font-size: 14px;
+}
+
+.send {
+    background-color: #0d6efd;
+    padding: 0 6px 0 6px;
+    color: white;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    width: auto;
+    max-width: calc(100% - 150px);
+    margin-left: auto;
+}
+
+.receive {
+    background-color: rgb(223, 223, 223);
+    padding: 0 6px 0 6px;
+    color: black;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    width: auto;
+    max-width: calc(100% - 150px);
+    margin-right: auto;
+}
+
+.receiveContent img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+
+/* media query */
+@media screen and (min-width: 1200px) {
+    .login,
+    .register {
+        width: 35%;
+        transition: all ease-in-out .5s;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .login, 
+    .register {
+        width: 40%;
+        transition: all ease-in-out .5s;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 767px) {
+    .login, 
+    .register {
+        width: 55%;
+        transition: all ease-in-out .5s;
+    }
+}
+
+@media screen and (max-width: 766px) and (min-width: 600px) {
+    .login, 
+    .register {
+        width: 70%;
+        transition: all ease-in-out .5s;
+    }
+}
+
+@media screen and (max-width: 599px) and (min-width: 401px) {
+    .login, 
+    .register {
+        width: 80%;
+        transition: all ease-in-out .5s;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .login, 
+    .register {
+        width: 100%;
+        transition: all ease-in-out .5s;
+    }
+    
+    .content_right {
+        height: 100px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        transform: translateY(-35px);
+        opacity: 0.8;
+        width: 11px;
+        position: absolute;
+        background-color: #f8f9fa;
+        transition: all ease-in-out .5s;
+    }
+
+    .content_right:hover {
+        height: 100px;
+        border-bottom-right-radius: 4px;
+        border-top-right-radius: 4px;
+        transform: translateY(-35px);
+        opacity: 1;
+        width: 11px;
+        position: absolute;
+        background-color: #f8f9fa;
+        transition: all ease-in-out .5s;
+    }
+}
